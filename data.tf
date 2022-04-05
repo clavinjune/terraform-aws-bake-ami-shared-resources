@@ -595,6 +595,7 @@ data "aws_iam_policy_document" "appbin_bucket_policy" {
       variable = "s3:x-amz-server-side-encryption"
 
       values = [
+        "aws:kms",
         "AES256",
       ]
     }
